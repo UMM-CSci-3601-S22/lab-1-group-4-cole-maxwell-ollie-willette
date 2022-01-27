@@ -42,3 +42,35 @@ body {
 #faculty-list {
   flex-direction: row;
 }
+#style-selector {
+  position: fixed;
+  background-color: #3A2E39;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+}
+
+#style-selector ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+#style-selector li {
+  float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#style-selector li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style-selector li a:hover {
+  background-color: #000;
+}

@@ -18,6 +18,7 @@ body {
 
 }
 
+/* color for links */
 a {
   color: #ffffff;
 }
@@ -33,24 +34,20 @@ a {
   background-color: #252927;
 }
 
-
-/* On mouse-over, add a deeper shadow */
-.section:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 #faculty {
   flex-direction: row;
   justify-content: center;
   align-content: left;
 }
+
+/* This gets the pictures of faculty and info centered on the section, and wrapping in rows */
 #faculty-list {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-
+/* This puts the pictures of faculty in squircles and not smashed together*/
 .pic {
   border-radius: 25%;
   padding: 5px;
@@ -71,10 +68,11 @@ a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
+
+
 #style-selector li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: right; /*explore what happens if this is 'right' instead*/
 }
 
 #style-selector li a {
@@ -97,13 +95,31 @@ a {
 }
 
 .section ol{
-
   font-family: "Arial", Sans-serif;
   font-size: 20px;
 
 }
 .section h2{
   font-size: 30px;
+}
+/*  Styled the cloud and local classes differently.
+    Cascade those properties to v-control and testing classes*/
+.cloud .testing{
+  font-style: italic;
+  font-weight: bold;
+}
+.cloud .version-control{
+  font-weight:bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.local .testing{
+  font-style: italic;
+}
+.local .version-control{
+  font-weight:bold;
+}
+.ide{
+  font-family: "Dancing Script", cursive;
 }
 
 #validation
